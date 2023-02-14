@@ -1,0 +1,57 @@
+@media (max-width: 375px) {
+  body {
+    background: url("../images/bg-mobile.svg") no-repeat;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 22rem);
+    grid-template-areas:
+      "image"
+      "info"
+      "social";
+  }
+
+  .header {
+    padding-bottom: 2rem;
+  }
+
+  .header a img {
+    width: 10rem;
+  }
+
+  .image {
+    margin-bottom: 10rem;
+  }
+
+  .image img {
+    width: 85%;
+  }
+
+  .content {
+    padding-right: 0;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding-bottom: 1.5rem;
+  }
+
+  .content p {
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 0 2rem;
+    padding-bottom: 3rem;
+  }
+
+  .content .btn-register {
+    margin: 0 auto;
+  }
+
+  .social {
+    height: 150px;
+    margin: 0 auto;
+    font-size: 1.5rem;
+  }
+}
