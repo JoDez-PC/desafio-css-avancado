@@ -1,73 +1,66 @@
 html {
   font-size: 62.5%;
-  max-width: 1440px;
-  font-family: "Poppins", sans-serif;
-  font-family: "Public Sans", sans-serif;
   background-color: var(--color-tema);
 }
 
 body {
   background: url("../images/bg-desktop.svg");
-  background: cover no-repeat;
+  background: cover;
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
 }
 
 .header a img {
-  width: 18rem;
-  margin: 1.5rem 4.5rem;
+  width: 30rem;
+  padding: 3rem 5rem 6rem;
 }
 
 .main {
-  display: grid;
-  grid-template-areas:
-    "image info"
-    ". social";
-  grid-template-columns: 60% auto;
-  grid-template-rows: 70% auto;
+  display: flex;
+  justify-content: center;
+  padding: 0 5rem;
 }
 
 .image {
-  grid-area: image;
-}
-.image {
-  margin-left: 4rem;
+  padding: 0 8rem 6rem 0;
+  width: 60%;
 }
 
-.image img {
-  width: 85%;
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .content {
-  grid-area: info;
   display: flex;
   flex-direction: column;
   justify-content: center;
   color: #fff;
-  padding-right: 6rem;
 }
 
 .content h1 {
-  padding-bottom: 3.5rem;
-  font-size: 3.5rem;
+  padding: 4rem 0 3.5rem;
+  font-size: 4.5rem;
   font-weight: 400px;
 }
 
 .content p {
-  font-size: 1.6rem;
+  font-size: 1.9rem;
   font-weight: 100;
-  font-family: sans-serif;
   padding-bottom: 2rem;
 }
 
 .content .btn-register {
   display: flex;
-  width: 15rem;
-  padding: 1rem 0;
+  width: 20rem;
+  padding: 1.6rem;
   border-radius: 50px;
   border-style: none;
   justify-content: center;
   align-items: center;
   background-color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--color-tema);
   transition: 0.3s;
 }
@@ -78,12 +71,11 @@ body {
 }
 
 .social {
-  grid-area: social;
   display: flex;
   justify-content: end;
   align-items: end;
   font-size: 2rem;
-  padding: 3rem 6rem;
+  padding-top: 10rem;
 }
 
 .social a {
@@ -95,8 +87,8 @@ body {
   transition: 0.3s;
   border: 1px solid;
   border-radius: 50px;
-  height: 3rem;
-  width: 3rem;
+  height: 4rem;
+  width: 4rem;
 }
 
 .social a:hover {

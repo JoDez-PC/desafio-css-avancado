@@ -3,55 +3,75 @@
     background: url("../images/bg-mobile.svg") no-repeat;
   }
 
-  .main {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 22rem);
-    grid-template-areas:
-      "image"
-      "info"
-      "social";
+  main {
+    display: flex;
+    flex-direction: column;
   }
+}
 
-  .header {
-    padding-bottom: 2rem;
-  }
-
+@media (max-width: 1024px) {
   .header a img {
-    width: 10rem;
+    width: 25rem;
+    padding: 2rem 4rem 3rem;
   }
 
   .image {
-    margin-bottom: 10rem;
+    width: 55%;
+    height: 65%;
   }
 
-  .image img {
-    width: 85%;
+  .content h1 {
+    font-size: 3rem;
   }
 
-  .content {
-    padding-right: 0;
+  .content p {
+    font-size: 1.6rem;
+  }
+
+  .content .btn-register {
+    width: 12rem;
+    font-size: 1.5rem;
+  }
+
+  .social {
+    padding-top: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .social a {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .image {
+    padding: 3rem 4rem 3rem 0;
   }
 
   .content h1 {
     font-size: 2.5rem;
-    text-align: center;
-    padding-bottom: 1.5rem;
+    padding: 6rem 0 3rem;
   }
 
   .content p {
-    font-size: 1.8rem;
-    text-align: center;
-    margin: 0 2rem;
-    padding-bottom: 3rem;
+    font-size: 1.5rem;
   }
 
   .content .btn-register {
-    margin: 0 auto;
+    width: 11rem;
+    font-size: 1.3rem;
+    padding: 1rem;
   }
 
   .social {
-    height: 150px;
-    margin: 0 auto;
+    padding-top: 4rem;
     font-size: 1.5rem;
   }
+
+  .social a {
+    width: 3rem;
+    height: 3rem;
+  }
+  
 }
